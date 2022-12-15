@@ -1,9 +1,22 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  // Write your algorithm hereconst splitted = word.split("");
+  const splittedWord = word.split("");
+  const copySplittedWord = [...splittedWord]
+  const reversed = copySplittedWord.reverse("");
+
+  for(let i = 0; i < splittedWord.length; i++){
+    if(reversed[i] !== splittedWord [i]){
+      return false;
+    }
+    else{
+      return true;
+    }
+  }
 }
 
 /* 
   Add your pseudocode here
+  
 */
 
 /*
